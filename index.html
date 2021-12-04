@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Quiz Application</title>
+</head>
+<body>
+    <div id="Container">
+        <div id="İnfo-Section">
+            <div id="İnfo-Header" >
+                <h4 id="İnfo-Head">Quiz Application</h4>
+                <p id="Built-By">By AhmetK</p>
+            </div>
+            <ul id="İnfo-Table">
+                <li class="İnfo-İtem">
+                    The time you spend in the exam will be located in the upper right pane and the exam duration is 20 seconds.
+                </li>
+                <li class="İnfo-İtem">
+                    Attention,the questions in this exam are examples and are subject to change.
+                </li>
+                <li class="İnfo-İtem">
+                    Press the button to go to the next question, but if you press it without marking, your answer will be blank.
+                </li>
+                <li class="İnfo-İtem">
+                    If you cannot answer the question after the time is up,the question will be blank.
+                </li>
+                <li class="İnfo-İtem">
+                    The results will be known at the end of the exam.Press the button in the bottom panel to start the exam, Good Luck!
+                </li>
+            </ul>
+            <div id="Start-Section">
+                <button onclick="Startbtn()" id="Start-Quiz" type="button">Start Quiz</button>
+            </div>
+        </div>
+        <div id="Quiz-Section">
+            <div id="Quiz-Head">             
+                <div id="Header">
+                    Quiz Application             
+                </div>             
+                <div id="Quiz-Time">                 
+                    Time<span id="Time">20</span>             
+                </div>         
+            </div>         
+            <div id="Quiz-Question">              
+            </div>         
+            <ul id="Quiz-List">             
+                <li id="option-1" onclick="SelectToOptions(event)" class="List-İtem">                
+                </li>             
+                <li id="option-2" onclick="SelectToOptions(event)" class="List-İtem">                             
+                </li>             
+                <li id="option-3" onclick="SelectToOptions(event)" class="List-İtem">                               
+                </li>             
+                <li id="option-4" onclick="SelectToOptions(event)" class="List-İtem">                                  
+                </li> 
+            </ul>           
+            <div id="Question-Number">             
+                <div id="Question-Piece">                              
+                </div>             
+                <button onclick="NextQuestion()" id="Next-Question" type="submit">Next Question</button>           
+            </div>
+        </div>
+        <div id="Finish-Section">
+            <div id="Finish-Header">
+                <h4 id="Finish-Head">Quiz Application</h4>
+                <p id="Built-By">By AhmetK</p>
+            </div>
+            <div id="Score-Table">
+                <p>True:<span id="True">0</span></p>
+                <p>False:<span id="False">0</span></p>
+                <p>Null:<span id="Null">0</span></p>
+                <p>Score:<span id="Score">0</span></p>
+            </div>
+            <div id="Replay-Section">
+                <button onclick="ReplayQ()" id="Replay-Quiz" type="button">Replay Quiz</button>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/app.js"></script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--
+        <div id="Quiz-Content">
+            <div id="Header">
+                Quiz Application
+            </div>
+            <div id="Quiz-Time">
+                Time<span id="Time">1:60</span>
+            </div>
+        </div>
+        <div id="Quiz-Question">
+            Aşağıdakilerden hangisi Türkiye'nin en büyük yüzölçümüne sahip ilidir ?
+        </div>
+            <ul id="Quiz-List">
+                <li class="List-İtem">
+                    İstanbul
+                </li>
+                <li class="List-İtem">
+                    Konya
+                </li>
+                <li class="List-İtem">
+                    Bursa
+                </li>
+                <li class="List-İtem">
+                    Ankara
+                </li>
+            </ul>
+        <div id="Question-Number">
+            <div id="Question-Piece">
+                <p>1/10 Questions</p>
+            </div>
+            <button id="Next-Question" type="submit">Next Question</button>  
+        </div>
+
+
+        <div id="Quiz-Question">
+                    Aşağıdakilerden hangisi Türkiye'nin en büyük yüzölçümüne sahip ilidir ?         
+                </div>         
+                <ul id="Quiz-List">             
+                    <li onclick="SelectToOptions()" class="List-İtem">                 
+                        İstanbul             
+                    </li>             
+                    <li onclick="SelectToOptions()" class="List-İtem">                 
+                        Konya             
+                    </li>             
+                    <li onclick="SelectToOptions()" class="List-İtem">                 
+                        Bursa             
+                    </li>             
+                    <li onclick="SelectToOptions()" class="List-İtem">                 
+                        Ankara             
+                    </li>         
+                </ul>
+                else if(clicks = 1){
+        event.currentTarget.style.backgroundColor = '#576574'; 
+        event.currentTarget.style.color = '#fff';
+        clicks = 0;
+    } 
+    
